@@ -1,5 +1,6 @@
 package com.example.movieapp
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -9,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
+@SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +23,7 @@ class SplashActivity : AppCompatActivity() {
         } // Transition After a few seconds
         Handler(Looper.getMainLooper()).postDelayed({
         // create intent to start main activity
-        val intent = Intent(this@SplashActivity , MainActivity::class.java)
+        val intent = Intent(this , MainActivity::class.java)
         startActivity(intent)
         finish() // close splash activity
         }, 3000)
