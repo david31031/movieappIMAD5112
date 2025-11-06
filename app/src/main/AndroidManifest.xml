@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- I've added the INTERNET permission, as your app will likely need it to fetch movie data. -->
+    <!-- I've added the INTERNET permission, as My app will likely need it to fetch movie data. -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -26,7 +26,7 @@
             </intent-filter>
         </activity>
 
-        <!-- Your other activities are declared here. -->
+        <!-- other activities are declared here. -->
         <!-- 'exported' is false because they are launched from within your app, not by other apps. -->
         <activity
             android:name=".MainActivity"
