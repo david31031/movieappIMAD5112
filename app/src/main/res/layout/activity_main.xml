@@ -30,10 +30,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="93dp"
-        android:layout_height="102dp"
+        android:layout_width="74dp"
+        android:layout_height="60dp"
         app:srcCompat="@drawable/download"
-        tools:layout_editor_absoluteX="319dp"
+        tools:layout_editor_absoluteX="340dp"
         tools:layout_editor_absoluteY="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
