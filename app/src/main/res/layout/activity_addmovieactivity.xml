@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2196F3"
-    tools:context=".addmovieactivity">
+    tools:context=".Addmovieactivity">
 
     <EditText
         android:id="@+id/etMovieTitle"
@@ -17,7 +17,6 @@
         android:ems="10"
         android:hint="Movie Title"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,7 +29,6 @@
         android:ems="10"
         android:hint="Director"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etMovieTitle" />
 
@@ -43,7 +41,6 @@
         android:ems="10"
         android:hint="Rating (1-5) "
         android:inputType="number"
-        android:text="Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etDirector" />
 
@@ -56,7 +53,6 @@
         android:ems="10"
         android:hint="Comments"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etRatings" />
 
@@ -95,7 +91,9 @@
         android:id="@+id/imageView2"
         android:layout_width="85dp"
         android:layout_height="76dp"
-        app:srcCompat="@drawable/download"
-        tools:layout_editor_absoluteX="330dp"
-        tools:layout_editor_absoluteY="-3dp" />
+        android:layout_marginStart="44dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toEndOf="@+id/etMovieTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/download" />
 </androidx.constraintlayout.widget.ConstraintLayout>

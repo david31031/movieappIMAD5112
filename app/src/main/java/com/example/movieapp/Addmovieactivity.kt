@@ -12,8 +12,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class addmovieactivity : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
+class Addmovieactivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId" , "SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

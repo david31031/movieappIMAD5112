@@ -16,12 +16,11 @@
             android:name=".detailedviewscreen"
             android:exported="false" />
         <activity
-            android:name=".addmovieactivity"
+            android:name=".Addmovieactivity"
             android:exported="false" /> <!-- SplashActivity set as the launcher activity -->
         <activity
             android:name=".SplashActivity"
             android:exported="true"
-            android:theme="@style/Theme.MovieApp.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

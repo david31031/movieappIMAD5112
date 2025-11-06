@@ -25,6 +25,7 @@
         android:layout_height="122dp"
         android:layout_marginStart="140dp"
         android:layout_marginTop="40dp"
+        android:contentDescription="@string/app_name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvSplashTitle"
         app:srcCompat="@drawable/download" />
