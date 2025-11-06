@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- I've added the INTERNET permission, as your app will likely need it to fetch movie data. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,30 +15,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieApp"
         tools:targetApi="31">
+
+        <!-- SplashActivity is the entry point of the app. It's the first screen shown. -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Your other activities are declared here. -->
+        <!-- 'exported' is false because they are launched from within your app, not by other apps. -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
         <activity
             android:name=".detailedviewscreen"
             android:exported="false" />
         <activity
             android:name=".Addmovieactivity"
-            android:exported="false" /> <!-- SplashActivity set as the launcher activity -->
-        <activity
-            android:name=".SplashActivity"
-            android:exported="true"
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity> <!-- Other activities in your application -->
-        <activity
-            android:name=".MainActivity"
-            android:exported="false">
-
-            <!--
-                android:exported is set to "false" because this activity is not meant
-                to be launched by other apps. It will be launched by SplashActivity.
-            -->
-        </activity>
     </application>
 
 </manifest>
